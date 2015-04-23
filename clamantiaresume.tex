@@ -1,0 +1,98 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% possible options include:
+% font size ('10pt', '11pt' and '12pt')
+% paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape')
+% font family ('sans' and 'roman')
+\documentclass[10pt,letterpaper,roman]{moderncv}
+
+% moderncv themes
+\moderncvstyle{banking}                                 % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                     % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\rmdefault} % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}
+
+% character encoding
+%\usepackage[utf8]{inputenc} % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.80, top=1.5cm, bottom=1.5cm]{geometry}
+
+\def\cpp{C{}\texttt{++}}
+
+%--
+%   personal data
+%--
+\name{Charlie}{Lamantia}
+\address{Street}{City State Zip}{Country}
+\phone[mobile]{Phone}
+\email{email}
+\homepage{webpage}
+
+%--
+%   content
+%--
+\begin{document}
+\makecvtitle
+
+\vspace*{-2\baselineskip}
+\section{Experience}
+
+\cventry{July 2014--Present}{Embedded Systems Engineer}{Sonomed Escalon}{Stoneham, MA}{}{}
+\begin{itemize}
+\item Ophthalmic ultrasound device component selection and schematic capture design
+\item Developed GUI in Windows Presentation Foundation interfacing USB ultrasound board
+\item Characterized legacy medical device and optimized algorithm to be emulated in C\#
+\item Developed kernel level device driver for Windows Driver Kit
+\item Updated firmware on existing product line to improve power consumption
+\end{itemize}
+\smallskip
+
+\cventry{2012--2014}{Senior Engineer}{Electronic Communications Lab at the University of Florida}{Gainesville, FL}{}{}
+\begin{itemize}
+\item Development of RADAR system prototyping platform for defense research
+\item Design of RADAR tracking algorithm for VHDL implementation
+\item Developed a connected component labeling system with unity find data structure in VHDL
+\item Developed GUI in the Qt framework with Python for data acquisition and display
+\item Developed data acquisition system in VHDL and captured simulated RADAR data in lab setting
+\end{itemize}
+\smallskip
+
+\cventry{2010--2012}{Research Assistant}{Electronic Communications Lab at the University of Florida}{Gainesville, FL}{}{}
+\begin{itemize}
+\item Designed modular DSP system with dynamic routing to facilitate rapid prototyping in VHDL
+\item Implemented legacy RADAR algorithms in programmable logic devices
+\item Scaled designs to fit in smaller footprint chips while maintaining performance metrics
+\item Solved timing issues in inter-processor communication of legacy devices
+\item Optimized existing filter designs for increased precision and operating frequency
+\item Troubleshooting and maintenance of on-site hardware including PCs and test equipment
+\end{itemize}
+\smallskip
+
+\cventry{2001--2007}{Technical Support}{Glatting Jackson Kercher Anglin, Inc.}{Orlando, FL}{}{Support and maintenance of workstations and printing solutions for landscape architecture firm.}
+\cventry{2000--2001}{Technical Support}{Convergsys}{Lake Mary, FL}{}{Phone center support for Dell computers, consumer line.}
+
+\section{Education}
+\cventry{2010--2012}{Master of Science in Electrical Engineering}{University of Florida}{}{}{}
+\cventry{2008--2010}{Bachelor of Science in Electrical Engineering}{University of Florida}{}{Cum Laude}{}
+
+\section{Graduate Research Project}
+\cvitem{Title}{\emph{A Novel Architecture for Digital RADAR Systems}}
+\cvitem{Supervisors}{Lab Director James Kurtz \& Associate Lab Director Chad Overman}
+\cvitem{Description}{A digital architecture was designed with enhanced modularity, in order to facilitate rapid prototyping of the RADAR signal processing chain.}
+
+\section{Skills}
+\cvitem{Programming Languages}{VHDL, C\#, \cpp, C, Python, MatLab, Basic, and \LaTeX}
+\cvitem{Development Environments}{Altera Quartus, Altera Qsys, Xilinx ISE, Lattice Diamond, Model-Sim, Code Composer Studio, Visual Studio, Eclipse, Altium Designer, Eagle Pro, LTSpice, OrCAD, Multisim, Ultiboard, and Simulink}
+\cvitem{Operating Systems}{Windows, Linux, Android, and iOS}
+\cvitem{Hobbies}{Rock climbing, Soccer, Cycling, Music, Art, Film, Game development, Board games, and Video games}
+
+\end{document}
+
+
+%% end of file `template.tex'.
